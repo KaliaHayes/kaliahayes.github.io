@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kalia Hayes | IB Career Page Redo</title>
+    <meta name="description" content="Personal web portfolio and resume of Kalia Hayes, Information Technology & Systems student at The University of Texas at Dallas.">
+    <meta name="keywords" content="portfolio, student, interstate batteries, internship, portfolio website">
+    <meta name="author">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- START: Styles -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+    <!-- Stroke 7 -->
+    <link rel="stylesheet" href="assets/bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+    <!-- Snow -->
+    <link rel="stylesheet" href="assets/css/snow.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- END: Styles -->
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+
+<style>
+    @media (min-width: 576px) {
+        #mobile-modals {
+            display: none;
+        }
+    }
+    @media (max-width: 576px) {
+        #mockup-caption {
+            display: none;
+        }
+    }
+</style>
+
+<!--
+    Additional Classes:
+        .nk-bg-gradient
+-->
+
+<body>
+    <header class="nk-header nk-header-opaque">
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-lg
+            .nk-navbar-sticky
+            .nk-navbar-autohide
+            .nk-navbar-transparent
+            .nk-navbar-transparent-always
+            .nk-navbar-white-text-on-top
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar">
+            <div class="container">
+                <div class="nk-nav-table">
+                    <a href="index.html" class="nk-nav-logo display-4" style="color: #1140c9 !important;"> KH </a>
+                    <ul class="nk-nav nk-nav-right hidden-md-down nk-nav-logo-onscroll" data-nav-mobile="#nk-nav-mobile" style="padding-top: 0px;">
+                        <li>
+                            <a href="index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger" style="color: #1140c9 !important;">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+    </header>
+    <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+-->
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-bg">
+            <div class="bg-image" style="background-image: url('assets/images/bg-pattern.jpg')"></div>
+        </div>
+        <div class="nk-nav-table">
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-header">
+                        <div class="nk-nav-logo">
+                            <a href="index.html" class="nk-nav-logo display-4" style="color: #1140c9 !important;" wp-site-name wp-href="url"> KH </a>
+                        </div>
+                        <div class="nk-nav-close nk-navbar-full-toggle">
+                            <span class="nk-icon-close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row-full nk-nav-row">
+                <div class="nano">
+                    <div class="nano-content">
+                        <div class="nk-nav-table">
+                            <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                <ul class="nk-nav">
+                                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+
+    <!--Main Content-->
+    <div class="nk-main">
+        <!--Intro-->
+        <div class="nk-portfolio-single" id="intro">
+            <div class="container">
+                <div class="nk-gap-4 mb-5"></div>
+                <h1 class="nk-portfolio-title display-4 text-center">Interstate Batteries Career Page Redo</h1>
+                <div class="nk-portfolio-info">
+                    <div class="nk-portfolio-text">
+                        <div class="lead lead-sm pt-3 text-center">I spent my summer 2018 working at
+                            <a href="interstatebatteries.com" target="_blank" style="color: green;">Interstate Batteries</a> Coporate Office as a front end web developer intern. During Green Carpet,
+                            Interstate Batteries' onboarding and orientation, us interns were introduced to our summer long
+                            group project. At the end of our 10-week internship, we were to develop initiatives for how Interstate
+                            Batteries can target millennials to raise awareness for their brand and status as an employer
+                            of choice.
+                            <br>
+                            <br>Millennials have become an extremely vital group for companies to learn how to reach. Companies
+                            must capture interest of this generation because by the year 2020, millennials will make up between
+                            46-50% of the workforce and begin spending approximately 1.4 trillion annually. Our task was
+                            to suggest ways Interstate Batteries could increase its visibility among millennials. On the
+                            final day of our internship, we would then present our suggested solutions in a 10-minute presentation
+                            to an audience consisting of company Executives, Intern Buddies, Intern Managers, and other team
+                            members.
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-4 mt-14"></div>
+            </div>
+        </div>
+
+        <!--Header Image-->
+        <div class="nk-portfolio-content" id="header" style="background-color: #ffffff !important;">
+            <img src="assets/images/IB/Career-Page-Redo.png" alt="" class="nk-img-stretch">
+        </div>
+
+        <!--Project Task-->
+        <div class="nk-portfolio-content" id="task">
+            <div class="container">
+                <div class="nk-gap-4">
+                </div>
+                <div class="row vertical-gap">
+                    <div class="offset-md-1 col-md-11">
+                        <h3>Task</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <p>
+                            Interstate Batteries' summer '18 interns were tasked with looking at Interstate’s culture, marketing strategies, and recruiting
+                            tactics and use what you find to develop a plan for attracting millennials to Interstate. In
+                            order to complete this project, we had to identify the characteristics and interests of millennials,
+                            as well as best practices for marketing to and recruiting them. We then identified aspects of
+                            Interstate Batteries that would draw in millennials.
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <p>
+                            Ultimately, groups had to develop a marketing and recruiting initiative that leverages IB’s culture, programs, and initiatives
+                            to gain the interest of millennials. To develop a solution through the lens of Interstate's culture,
+                            we had to familiarize ourselves with team members from different departments, the company culture,
+                            and current marketing campaigns and recruiting initiatives. In an effort to bring different backgrounds,
+                            skills, personalities, and ideas together, our groups consisted of four interns from different
+                            departments.
+                        </p>
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+            </div>
+        </div>
+
+        <!--Project Planning-->
+        <div class="nk-portfolio-content" style="background-color: #ffffff !important;">
+            <div class="container">
+                <div class="nk-gap-4">
+                </div>
+                <div class="row">
+                    <div class="offset-md-1 col-md-11">
+                        <h3>Planning</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <p>
+                            As the web developer intern, I realized my ability to produce something tangible such as a web page on IB's website that
+                            could be used to encourage millennials to apply. I knew from personal experience that a company
+                            career page is a popular target for job applicants and individuals seeking to know more about
+                            the business.</p>
+                        <p>
+                            Being involved in the internship program, we realized the quality of life, culture, and atmosphere at IB deserved to be publicized
+                            and could truly make an impact on IB's brand. We reasoned that adding this content to the company
+                            website provides a key source of information for future potential recruits, especially for us
+                            mobile-based millennials.
+                        </p>
+                        <p>Looking at the existing career page on IB's website, we determined that we'd logically rearrange
+                            content to emphasize calls-to-action, remove unnecessary content, and briefly introduce and link
+                            to newly created pages.
+                        </p>
+
+                    </div>
+                    <div class="col-md-5">
+
+                        <h5>New Pages & Content</h5>
+                        <b>Life @ IB</b>
+                        <ul>
+                            <li>Career Areas/Business Units</li>
+                            <li>Career Development Programs</li>
+                            <li>Events</li>
+                        </ul>
+                        <b>Internship Program</b>
+                        <ul>
+                            <li>Internship Program Overview</li>
+                            <li>Current/Past Intern Testimonials & Questionnaire</li>
+                        </ul>
+                        <b>Benefits/Wellness</b>
+                        <ul>
+                            <li>Benefits Overview</li>
+                            <li>Live Well Program Overview </li>
+                        </ul>
+                        <b>Military Hiring Initiatives</b>
+                        <ul>
+                            <li>Values Mission Overview</li>
+                            <li>Interstate Honored by DOL</li>
+                            <li>Operation Appreciation</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+            </div>
+        </div>
+
+        <!--Project Analysis-->
+        <div class="nk-portfolio-content" id="analysis" style="background-color: #f6f6f6 !important;">
+            <div class="analysis" style="background-color: #f6f6f6 !important;">
+                <div class="container">
+                    <div class="nk-gap-3"></div>
+
+                    <div class="row vertical-gap">
+                        <div class="offset-md-1 col-md-11">
+                            <h3>Analysis</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 offset-md-1">
+                            <p>
+                                To generate ideas for new content to add to the revamped career page, I audited career pages belonging to other well-established
+                                companies with a large portion of millennial workers such as
+                                <a href="https://careers.southwestair.com/" target="_blank">Southwest</a>,
+                                <a href="https://www.airbnb.com/careers/" target="_blank">Airbnb</a>,
+                                <a href="https://careers.epsilon.com" target="_blank">Epsilon</a>,
+                                <a href="https://careers.pinterest.com/" target="_blank">Pinterest</a>, etc. and crafted a list of common components and identified their draw and
+                                pull factors. After determining categories of content to place on the new career page, I
+                                took a deep dive into all things Interstate Batteries.
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                I started by contacting and setting up meetings with various departmental heads who could enlighten me on the mechanics,
+                                culture, events, perks, and benefits of IB. From there, I went online and explored a gold
+                                mine of information on Interstate's online intranet portal, IB Connect.
+                                <em>I even skimmed the employee handbook.</em> Ultimately, I was able to discover a plethora
+                                of quality content worth exposing in an effort to attract millennial applicants.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+            </div>
+
+        </div>
+
+        <!--Project Design & Implementation-->
+        <div class="nk-portfolio-content" id="design_implementation" style="background-color: #ffffff !important;">
+            <div class="container" id="mockup">
+                <div class="nk-gap-3"></div>
+
+                <div class="" id="cp-mockup-map">
+                    <img src="assets/images/IB/CP-mockup.png" usemap="#image-map" class="img-fluid">
+
+                    <a href="" data-toggle="modal" data-target="#ib-main" alt="New Career Landing PAge" title="New Career Landing Page" style="position: absolute; left: 19.01%; top: 6.75%; width: 13.44%; height: 62.39%; z-index: 2;"></a>
+                    <a href="" data-toggle="modal" data-target="#ib-life" alt="Life at Interstate" title="Life at Interstate" style="position: absolute; left: 32.93%; top: 6.68%; width: 13.36%; height: 83.94%; z-index: 2;"></a>
+                    <a href="" data-toggle="modal" data-target="#ib-internships" alt="Internships" title="Internships" style="position: absolute; left: 46.86%; top: 6.62%; width: 13.32%; height: 57.8%; z-index: 2;"></a>
+                    <a href="" data-toggle="modal" data-target="#ib-benefits" alt="Benefits" title="Benefits" style="position: absolute; left: 60.74%; top: 6.68%; width: 13.36%; height: 73.79%; z-index: 2;"></a>
+                    <a href="" data-toggle="modal" data-target="#ib-vm" alt="Values Mission Veteran Hiring Initiative" title="Values Mission Veteran Hiring Initiative"
+                        style="position: absolute; left: 74.63%; top: 6.68%; width: 13.47%; height: 66.58%; z-index: 2;"></a>
+
+                    <p class="text-center" id="mockup-caption" style="font-style: italic; justify-content: center; font-size:small;">Click on each page mockup to learn more about my design and content choices or view the live web pages.</p>
+                </div>
+
+                <div class="nk-gap-2"></div>
+            </div>
+            <div class="design_implementation">
+                <div class="container">
+                    <div class="row vertical-gap">
+                        <div class="offset-md-1 col-md-11">
+                            <h3>Design & Implementation</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 offset-md-1">
+                            <p>
+                                When designing each new page using Adobe XD and Photoshop, I utilized IB's style guides, media library, theme documentation,
+                                and built-in web components in order to align my pages with the overarching website theme.
+                                Though IB's CMS, Sitecore, had page building functionalities, I opted to code each page by
+                                hand using Visual Studio Code, Dreamweaver, and Bootstrap 3 then later translate my work
+                                to Sitecore.
+
+                            </p>
+                        </div>
+                        <div class="col-md-5">
+                            <p>
+                                Going page by page, I determined; page layouts, what researched content and media to include, what calls-to-action to emphasize,
+                                and the amount interactivity necessary per page. For example, on the main career page, I
+                                decided to move the 'Apply Now' div towards the top of the viewport to direct attention to
+                                the apply button early on. I also included the same apply now call-to-action on every newly
+                                created page.
+                            </p>
+                            <!--Mobile Links to page popups. HIDE THIS ON EVERYTHING BUT MOBILE-->
+
+                            <div id="mobile-modals">
+                                <p>Click on each page link to learn more about my design and content choices or view the live
+                                    web pages:</p>
+                                <div class="text-center">
+                                    <a href="" class="nk-btn-2" data-toggle="modal" data-target="#ib-main">Career Landing Page</a> •
+                                    <a href="" class="nk-btn-2" data-toggle="modal" data-target="#ib-life">Life At Interstate</a> •
+                                    <a href="" class="nk-btn-2" data-toggle="modal" data-target="#ib-internships">Internships</a> •
+                                    <a href="" class="nk-btn-2" data-toggle="modal" data-target="#ib-benefits">Benefits</a> •
+                                    <a href="" class="nk-btn-2" data-toggle="modal" data-target="#ib-vm">Values Mission</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-2"></div>
+            </div>
+        </div>
+
+        <!--Project Links-->
+        <div class="nk-portfolio-launch-site">
+            <a href="https://ibweb.preview.interstatebatteries.com/about/join2" target="_blank">Launch Site</a> //
+            <a href="assets/documents/Page Mockups2.xd" target="_blank">Adobe XD Wireframes</a> //
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vQxPCGyOvgUGJvb6h9E0_Kk20C-Igz2pgNm77EvQmaZ22YEXzfygBxJ-BOb7KNFJqHQ5NdfMZfn07dO/pub?start=false&loop=false&delayms=3000"
+                target="_blank">Presentation Slides</a>
+        </div>
+
+
+        <!-- START: Pagination -->
+        <div class="nk-pagination nk-pagination-center">
+            <div class="container">
+                <a class="nk-pagination-prev" href="work-single-7.html">
+                    <span class="pe-7s-angle-left"></span> Previous Work</a>
+                <a class="nk-pagination-center" href="work-3-style-1.html">
+                    <span class="nk-icon-squares"></span>
+                </a>
+                <a class="nk-pagination-next" href="work-single-9.html">Next Work
+                    <span class="pe-7s-angle-right"></span>
+                </a>
+            </div>
+        </div>
+        <!-- END: Pagination -->
+        <!--START: Footer
+
+    Additional Classes:
+        .nk-footer-transparent
+-->
+        <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-center">
+                    <div class="nk-footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-footer-text">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+    </div>
+    <!-- START: Scripts -->
+    <!-- GSAP -->
+    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- nK Share -->
+    <script src="assets/plugins/nk-share/nk-share.js"></script>
+    <!-- Sticky Kit -->
+    <script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+    <!-- Jarallax -->
+    <script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+    <!-- Flickity -->
+    <script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <!-- Photoswipe -->
+    <script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <!-- Jquery Form -->
+    <script src="assets/bower_components/jquery-form/dist/jquery.form.min.js"></script>
+    <!-- Jquery Validation -->
+    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- Hammer.js -->
+    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+    <!-- Social Likes -->
+    <script src="assets/bower_components/social-likes/dist/social-likes.min.js"></script>
+    <!-- NanoSroller -->
+    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+    <!-- Keymaster -->
+    <script src="assets/bower_components/keymaster/keymaster.js"></script>
+    <!-- Prism -->
+    <script src="assets/bower_components/prism/prism.js"></script>
+    <!-- Snow -->
+    <script src="assets/js/snow.min.js"></script>
+    <script src="assets/js/snow-init.js"></script>
+    <!-- END: Scripts -->
+
+
+    <!--Popup Modals-->
+    <!-- Main Page Modal -->
+    <div class="modal fade" id="ib-main" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Career Landing Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>For the career landing page, I wanted to create a space that highlights company perks, programs, and
+                        features. After auditing various career pages around the web, I decided to create new web pages highlighting
+                        Interstate's company culture, internship program, benefits, and military hiring initiative. </p>
+
+                    <p>My first plan of attack when designing the new career page was to move the "Apply Now" button towards
+                        to top of the viewport in order to draw more attention to it. Also, given that the landing page menu
+                        links to those additional career related pages, I chose to offer a brief preview of the content found
+                        on each newly created page using pre-existing page building components found within Sitecore in order
+                        to match my page style with the overarching website style. Lastly, I decided to include a rotating
+                        carousel of quotes from current company employees as a way to make Interstate's culture more transparent
+                        to potential candidates in a word-of-mouth style.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Life @ IB Modal -->
+    <div class="modal fade" id="ib-life" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Life at Interstate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>On the Life At Interstate web page, I really wanted to emphasize the empowering, team based company culture
+                        while also giving a holistic view of departments and business units found at Interstate. I reckoned
+                        that the page content depicting Life @ Interstate would be a worthy pull-factor in and of itself
+                        and would generate job applicants.
+                    </p>
+                    <p>Starting at the top, I implemented an immediate call to action by telling viewers to "Join Our Interstate
+                        Team". Right below the CTA, I gave a concise yet to the point overview of business units found at
+                        Interstate, so that potential applicants can gauge just which team they'd like to join.
+                    </p>
+                    <p>
+                        The next section of the page detailed Interstate's commitment to fostering a culture when your most impactful self can shine.
+                        As an intern, I was highly impressed with the company offered courses, programs, and other career
+                        enhancing resources and was eager to show the world a sneak peek.
+                    </p>
+                    <p>The last section on the page highlighted just how "fun" working at Interstate could be. I wanted to introduce
+                        applicants to the exciting recurring company-wide events.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/life-at-interstate" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internships Modal -->
+    <div class="modal fade" id="ib-internships" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Internships</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The internship page was definitely my favorite page to work on. With the other pages, I utilized a lot
+                        of company resources in order to generate page content. With the Internship page, I used my everyday
+                        experiences, and feedback from my intern peers as well as former interns to tell a tale.
+                    </p>
+                    <p>
+                        I started off by giving an overview of the internship program offered at Interstate Batteries, including types of internships
+                        offered. As I applied for an internship with Interstate, this very material was nowhere to be found
+                        and I essentially went in blindly with my fingers crossed (turned out great, though!). Having gone
+                        through the internship program, I knew that most everything I participated in was high quality and
+                        worth a mention.
+                    </p>
+                    <p>
+                        I wanted to incorporate something similar to the testimonials on the career landing page as a way to tell potential intern
+                        applicants about the program from the point of view of recent participants. My group and I created
+                        an internship survey that we sent it out to the other summer '18 interns asking them a few questions
+                        about their experience as an IB intern. After receiving responses, I made a design choice to emphasize
+                        stand-out quotes from the survey replies we received and opted to hide the rest behind a pop up modal
+                        to prevent page congestion. We also sent out a similar survey to current Interstate employee's who
+                        had previously interned with the company as a way to show applicants that there's a real chance at
+                        a future at Interstate.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/interns" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Modal -->
+    <div class="modal fade" id="ib-benefits" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Benefits & Wellness</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/benefits" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VM Modal -->
+    <div class="modal fade" id="ib-vm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Values Mission | Veteran Hiring Initiative</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/values-mission" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

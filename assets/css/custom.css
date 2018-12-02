@@ -1,0 +1,7 @@
+/* PLACE YOU CUSTOM STYLES IN THIS FILE */
+.small-hr {
+    background: #fff none repeat scroll 0 0;
+    display: block;
+    height: 4px;
+    width: 32px;
+}

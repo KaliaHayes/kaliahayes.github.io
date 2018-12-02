@@ -1,328 +1,674 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<title id="title">Kalia Hayes | Under Construction</title>
-		<meta name="description" content="Web portfolio belonging to Kalia Hayes, a Dallas based IT student." />
-		<meta name="keywords" content="student, data analysis, data, ut dallas, student portfolio, utd student, it student, information technology" />
-		<meta name="author" content="Kalia Hayes" />
+<!--
+  Name: Snow - Minimal & Clean Portfolio HTML Template
+  Version: 1.1.0
+  Author: nK, unvab
+  Website: https://nkdev.info, http://unvab.com/
+  Purchase: https://nkdev.info
+  Support: https://nk.ticksy.com
+  License: You must have a valid license purchased only from ThemeForest (the above link) in order to legally use the theme for your project.
+  Copyright 2017.
+-->
+<html lang="en" wp-site wp-site-is-master-page="true" wp-site-theme-name="Snow" wp-site-theme-slug="snow" wp-site-themes-folder="/Users/Kalia/OneDrive - The University of Texas at Dallas/Website/wp-content/themes"
+    wp-site-preview-url="http://206.189.165.4/">
 
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kalia Hayes | Web Portfolio</title>
+    <meta name="description" content="Personal web portfolio and resume of Kalia Hayes, Information Technology & Systems student at The University of Texas at Dallas.">
+    <meta name="keywords" content="portfolio, student, utdallas, ut dallas, utd, it student website, student website, portfolio website">
+    <meta name="author" content="nK">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- START: Styles -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+    <!-- Stroke 7 -->
+    <link rel="stylesheet" href="assets/bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+    <!-- Snow -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- END: Styles -->
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+<!--
+    Additional Classes:
+        .nk-bg-gradient
+-->
 
-		<!--Fonts - changed to Source Code Pro-->
-		<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
+<body wp-site-content>
+    <header class="nk-header">
+        <!--
+        START: Navbar
 
-		<!--CSS-->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-	</head>
+        Additional Classes:
+            .nk-navbar-lg
+            .nk-navbar-sticky
+            .nk-navbar-autohide
+            .nk-navbar-transparent
+            .nk-navbar-transparent-always
+            .nk-navbar-white-text-on-top
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top" style="padding-top: 10px;
+    padding-bottom: 10px; box-shadow: 0px 0px 0px #fff !important;">
+            <div class="container">
+                <div class="nk-nav-table">
+                    <a href="index.html" class="nk-nav-logo display-4" style="color: #1140c9 !important;" wp-site-name wp-href="url"> KH </a>
+                    <ul class="nk-nav nk-nav-right hidden-md-down nk-nav-logo-onscroll" data-nav-mobile="#nk-nav-mobile" style="padding-top: 0px;">
+                        <li>
+                            <a href="index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="index.html#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger" style="color: #1140c9 !important;">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Navbar -->
+    </header>
+    <!--
+    START: Navbar Mobile
 
-	<body data-ng-app="contactApp">
+    Additional Classes:
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+-->
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-bg">
+            <div class="bg-image" style="background-image: url('assets/images/bg-pattern.jpg')"></div>
+        </div>
+        <div class="nk-nav-table">
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-header">
+                        <div class="nk-nav-logo">
+                            <a href="index.html" class="nk-nav-logo display-4" style="color: #1140c9 !important;" wp-site-name wp-href="url"> KH </a>
+                        </div>
+                        <div class="nk-nav-close nk-navbar-full-toggle">
+                            <span class="nk-icon-close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row-full nk-nav-row">
+                <div class="nano">
+                    <div class="nano-content">
+                        <div class="nk-nav-table">
+                            <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                <ul class="nk-nav">
+                                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+    <div class="nk-main">
+        <!-- START: Header Title -->
+        <div class="row" id="jumbotron">
+            <div class="col-lg-6" id="jumbotron-left" style="height: 100vh;
+    background-image: url('assets/images/bg-pattern.jpg');">
+                <div class="nk-gap-6 mnb-10"></div>
+                <div class="nk-box-4 mw-620">
+                    <h2 class="display-4" style="color: #ffffff !important;">Kalia Hayes</h2>
+                    <span class="small-hr"></span>
+                    <div class="nk-gap mnt-5"></div>
+                    <p style="color: #ffffff !important;">Hi! I'm glad you found me. This website is currently under construction but I've left some info about
+                        myself here and there. Get to know me. Feel free to connect!</p>
+                    <div class="mnt-7">
+                        <a class="nk-btn" target="_self" href="index.html#about">More about me </a>
+                    </div>
+                    <div class="nk-gap">
+                    </div>
+                    <div class="nk-footer-social text-white">
+                        <ul style="padding-left: 0px;">
+                            <li style="display: inline-block;">
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin" style="padding-right: 8px;"></i>
+                                </a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="https://github.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-github" style="padding-right: 8px;"></i>
+                                </a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="https://twitter.com/kaliahayes" target="_blank">
+                                    <i class="fa fa-twitter" style="padding-right: 8px;"></i>
+                                </a>
+                            </li>
+                            <li style="display: inline-block;">
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram" style="padding-right: 8px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nk-gap-6"></div>
+            </div>
+            <div class="col-lg-6" id="jumbotron-right" style="color: #ffffff !important;
+    background-position: left bottom;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh;
+    background-image: url('assets/images/duo.png');">
+                <div class="nk-gap-6 mnb-10"></div>
+                <div class="nk-box-4 mw-620">
+                    <div class="nk-gap mnt-5"></div>
+                    <p style="color: #ffffff !important;">
+                        <b style="font-size: 1.4em;">Dallas based Information Technology and Systems undergrad with stomping grounds at UT Dallas.</b>
+                    </p>
+                    <span class="small-hr"></span>
+                    <div class="nk-gap mnt-5"></div>
+                    <h2 class="display-4" style="color: #ffffff !important;">
+                        Whoosh.</h2>
+                </div>
+                <div class="nk-gap-6"></div>
+            </div>
+        </div>
+        <!-- END: Header Title -->
+        <!-- START: About Our Agency -->
+        <div class="bg-white" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-xs-center" style="color: #3a3a3a;">
+                        <div class="nk-gap-4 mt-9"></div>
+                        <h2 class="display-4">About Me</h2>
+                        <div class="nk-gap mnt-5"></div>
+                        <p style="font-size:1.5em">Data. Design. Dallas.</p>
+                        <p>Hello! My name is Kalia Hayes and I'm an
+                            <a href="http://jindal.utdallas.edu/isom/information-systems-programs/bs-its/" target="_blank">Information Technology and Systems</a> junior with a concentration in Business Intelligence and
+                            Data Analytics at the University of Texas at Dallas. In my time at UTD, I've immersed myself
+                            in all things business and data driven by taking courses such as Web Development for Business
+                            Applications, Web Analytics, and Java OOP. I've also held memberships in various UTD clubs including
+                            Women in Business and Technology, Undergraduate Success Scholars, and the UI/UX Club.</p>
+                        <p>In addition to my UTD curriculum and extracurricular activities, I partake in various highly rated
+                            open online courses(thank you Coursera, Udacity, and EdX) around the web in order to increase
+                            my exposure to BI and data analytics. I also enjoy testing my growing abilities using open online
+                            databases and communities(another thank you to Data.world and Kaggle.com).</p>
+                        <p>Apart from my studies, I've held at least one job during my entire UTD career. Since my freshman
+                            year, I've worked for UTD as an inventory clerk and assist in updating and maintaining UTD's
+                            asset databases. Also, I currently work as a remote based social media manager for four restaurants
+                            and one dairy farm. Through SMM, I have an created an environment where I utilize my business
+                            focused analytical skill set on a daily basis to drive sales and grow brand loyalty and awareness
+                            on various social media platforms.</p>
+                        <p>I look forward to sharing much more about myself with you in the near future! Have a look at some
+                            of my abilities and current concentrations below.</p>
+                        <p>
+                            <span style="font-size: 1rem; letter-spacing: 0.004em;">Oh, and </span>
+                            <a href="https://twitter.com/hashtag/CowboysNation" target="_blank" style="background-color: rgb(255, 255, 255); font-size: 1rem; letter-spacing: 0.004em;">#CowboysNation</a>
+                            <br>
+                            <img src="assets/images/Signature.JPG" alt="" class="nk-img-fit" style="font-size: 1rem; letter-spacing: 0.004em;">
+                            <br>
+                        </p>
+                        <div class="nk-gap-2 mt-25"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nk-box bg-dark-1 text-white" id="skills">
+            <div class="bg-image bg-image-parallax" style="background-image: url('assets/images/bg-pattern.jpg');">
+            </div>
+            <div class="nk-gap-5 mnt-6"></div>
+            <div class="row align-center">
+                <div class="col-md-12">
+                    <h1 class="text-center text-white" style="text-align: center;">What I Do.</h1>
+                    <div class="container">
+                        <p class="lead" style="text-align: center;
+    font-size: 1.06em;">Below is an overview of my skills and assets that I have learned throughout my coursework, side projects,
+                            and naturally with life.</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1E9_E_mCRH8pEWsIvpYG6kYmeDlgMxA4l/view?usp=sharing">
+                        <div class="nk-btn">
+                            <i class="pe-7s-cloud-download"></i>
+                            <span id="resume" style="font-weight: lighter;">
+                                Resume </span>
+                        </div>
+                    </a>
+                    <div class="nk-gap">
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="color: white !important;">
+                <div class="row vertical-gap" style="color: #ffffff !important;">
+                    <div class="col-md-4 col-lg-4">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <i class="pe-7s-monitor"></i>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Web Development</div>
+                                <div class="nk-ibox-text">I have designed, coded, and hosted websites using software such as Sketch, Photoshop, HTML,
+                                    CSS, Bootstrap, GitHub pages, and Wordpress.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span class="pe-7s-graph2"></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Data Analytics</div>
+                                <div class="nk-ibox-text">Using analytical processes, I help businesses (or myself, really) make data-driven decisions
+                                    by uncovering key insights hidden within.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span class="pe-7s-graph"></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Data Visualization</div>
+                                <div class="nk-ibox-text">Translating data discoveries into a cohesive and comprehensive language for
+                                    <i>all</i> viewers is essential for business to flourish. I enjoy doing so with Tableau.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4" style="margin-bottom: 30px;">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span class="pe-7s-target"></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Digital Marketing</div>
+                                <div class="nk-ibox-text">During my studies, I've deployed Google AdWords campaigns and analyzed the data collected
+                                    to increase brand awareness for a Plano, TX based charity.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 vertical-gap" style="margin-bottom: 30px;">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span class="pe-7s-users"></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Social Media Mgmt.</div>
+                                <div class="nk-ibox-text"> For 2+ years, I've managed social media accounts for various businessess. I help develop
+                                    and implement strategies to drive brand awareness.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="nk-ibox-1">
+                            <div class="nk-ibox-icon">
+                                <span class="pe-7s-server"></span>
+                            </div>
+                            <div class="nk-ibox-cont">
+                                <div class="nk-ibox-title">Database Mgmt.</div>
+                                <div class="nk-ibox-text">I possess knowledge of SQL and the MySQL database and have used these skills to perform CRUD
+                                    operations on databases for analysis. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-gap-5 mnt-6"></div>
+        </div>
+        <!-- END: Features -->
 
 
-		<!--Container-->
-		<div class="pad-zero">
 
-			<!--Splitlayout -->
-			<div id="splitlayout" class="splitlayout reset-layout">
+        <!-- START: Portfolio -->
+        <div class="nk-box bg-white" id="portfolio">
+            <div class="nk-gap-4 mt-5"></div>
+            <h2 class="text-xs-center display-4">Portfolio</h2>
+            <div class="nk-gap mnt-6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <div class="text-xs-center">Some of my work that I accomplished either as apart of my UTD curriculum, my online courses, or as
+                            a presonal side project.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- START: Filter -->
+                <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
+                    <a href="#nk-toggle-filter">
+                        <span class="nk-icon-squares"></span>
+                    </a>
+                </div>
+                <ul class="nk-isotope-filter">
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter="internship">Internship</li>
+                    <li data-filter="project">Academic Project</li>
+                    <li data-filter="web">Web Development</li>
+                    <li data-filter="SMM">Social Media Management</li>
+                    <li data-filter="design">Design</li>
+                </ul>
+                <!-- END: Filter -->
+                <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
+                    <div class="nk-isotope-item" id="GOMC" data-filter="project">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="GOMC.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/GOMC/thumbnail.png');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Google Online Marketing Campaign</h2>
+                                    <div class="portfolio-item-category">Academic Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="SMM" data-filter="web, internship">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="interstate-batteries-internship.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/IB/ib-thumbnail.png');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Web Development Internship</h2>
+                                    <div class="portfolio-item-category">Interstate Batteries</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="NiD" data-filter="web">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="natureindallas.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/NiD/thumbnail.jpeg');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">NatureInDallas</h2>
+                                    <div class="portfolio-item-category">Wordpress Web Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="java" data-filter="project">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="Java-Movie-DB.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/Java/java-thumbnail.png');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Java Movie Database</h2>
+                                    <div class="portfolio-item-category">Academic Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="JWC" data-filter="project">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="OBHR-Report.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/JWC/jwc%20thumbnail.jpeg');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Startup Organizational Design</h2>
+                                    <div class="portfolio-item-category">Academic Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="Cult" data-filter="internship">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="Creative-Cultivation.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/Cult/cult-thumbnail.png');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Creative Cultivation</h2>
+                                    <div class="portfolio-item-category">Internship Presentation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="BGB" data-filter="project">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="BGB.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/BGB/ama2.jpeg');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Businesses Give Back</h2>
+                                    <div class="portfolio-item-category">Academic Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nk-isotope-item" id="CC" data-filter="web, internship">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="IB-career-page-project.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/IB/cp-thumbnail.png');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Interstate Batteries Career Page Redo</h2>
+                                    <div class="portfolio-item-category">Internship Web Development Project</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="nk-isotope-item" id="old-portfolio" data-filter="web">
+                        <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
+                            <a href="retired-portfolio.html" class="nk-portfolio-item-link"></a>
+                            <div class="nk-portfolio-item-image" style="background-image: url('assets/images/NiD/retired-thumbnail');">
+                            </div>
+                            <div class="nk-portfolio-item-info nk-portfolio-item-info-center text-xs-center">
+                                <div>
+                                    <h2 class="portfolio-item-title h3">Personal Portfolio (retired)</h2>
+                                    <div class="portfolio-item-category">Web Development</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-4"></div>
+            </div>
+            <div class="nk-gap-4 mt-15"></div>
+        </div>
+        <!-- END: Portfolio -->
+        <!-- START: Reviews -->
+        <!-- END: Reviews -->
+        <!-- START: Partners -->
+        <!-- END: Partners -->
+        <!-- START: Blog -->
+        <!-- END: Blog -->
+        <!-- START: Contact Info -->
+        <div class="container" id="contact">
+            <div class="nk-gap-5"></div>
+            <div class="row vertical-gap">
+                <div class="col-lg-5">
+                    <!-- START: Info -->
+                    <h2 class="display-4">Contact Info:</h2>
+                    <div class="nk-gap mnt-3"></div>
+                    <p style="color: #000000;">Feel free to reach out to me with any questions, comments, or concerns. Likewise, this is a good option
+                        for a causual conversation, too. Get to know me!</p>
+                    <ul class="nk-contact-info" style="color: #000000;">
+                        <li>
+                            <strong>Address:</strong> Dallas, TX
+                        </li>
+                        <li>
+                            <strong>Phone:</strong> +1 214 738 1386
+                        </li>
+                        <li>
+                            <strong>Email:</strong> Kalia.Hayes@utdallas.edu
+                        </li>
+                    </ul>
+                    <!-- END: Info -->
+                </div>
+                <div class="col-lg-7">
+                    <!-- START: Form -->
+                    <form action="assets/php/contact.php" class="nk-form nk-form-ajax">
+                        <div class="row vertical-gap">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control required" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control required" name="email" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="nk-gap-1"></div>
+                        <input type="text" class="form-control required" name="title" placeholder="Your Title">
+                        <div class="nk-gap-1"></div>
+                        <textarea class="form-control required" name="message" rows="8" placeholder="Your Comment" aria-required="true"></textarea>
+                        <div class="nk-gap-1"></div>
+                        <div class="nk-form-response-success"></div>
+                        <div class="nk-form-response-error"></div>
+                        <button class="nk-btn">Send Message</button>
+                    </form>
+                    <!-- END: Form -->
+                </div>
+            </div>
+            <div class="nk-gap-5">
+                <br>
+            </div>
+        </div>
+        <!-- END: Contact Info -->
+        <!--
+    START: Footer
+-->
+        <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-center">
+                    <div class="nk-footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-footer-text">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+    </div>
+    <!-- START: Scripts -->
+    <!-- GSAP -->
+    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- nK Share -->
+    <script src="assets/plugins/nk-share/nk-share.js"></script>
+    <!-- Sticky Kit -->
+    <script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+    <!-- Jarallax -->
+    <script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+    <!-- Flickity -->
+    <script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <!-- Photoswipe -->
+    <script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <!-- Jquery Form -->
+    <script src="assets/bower_components/jquery-form/dist/jquery.form.min.js"></script>
+    <!-- Jquery Validation -->
+    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- Hammer.js -->
+    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+    <!-- Social Likes -->
+    <script src="assets/bower_components/social-likes/dist/social-likes.min.js"></script>
+    <!-- NanoSroller -->
+    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+    <!-- Keymaster -->
+    <script src="assets/bower_components/keymaster/keymaster.js"></script>
+    <!-- Prism -->
+    <script src="assets/bower_components/prism/prism.js"></script>
+    <!-- Snow -->
+    <script src="assets/js/snow.min.js"></script>
+    <script src="assets/js/snow-init.js"></script>
+    <!-- END: Scripts -->
+</body>
 
-				<!--Intro-->
-				<div class="intro">
-
-					<!--Left Content Intro-->
-					<div class="side side-left">
-
-						<!--About Nav-->
-						<div class="call-to-action about">
-								<i class="fa fa-info fa-2x"></i>
-								<i class="fa fa-times fa-2x opacity-hide"></i>
-								<span class="top"></span>
-								<span class="right"></span>
-								<span class="bottom"></span>
-								<span class="left"></span>
-						</div>
-						<!--/About Nav-->
-
-						<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center content-wrap">
-
-						<!--Logo-->
-						<h1 class="pull-left">Kalia Hayes</h1>
-						<!--/Logo-->
-
-						<!--main content-->
-						<div class="main">
-
-							<!--Content with Typing Intro-->
-							<section id="home" class="section active">
-								<div  class="preloader"></div>
-								<div class="align-center text-left">
-									<span class="small-hr animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="200"></span>
-									<p class="animated fadeInLeft"  data-animation="fadeInLeft" data-out-animation="fadeOutLeft" data-out-animation-delay="300">Hi! I'm glad you found me. This website is currently under construction but I've left some info about myself here and there. Get to know me. Feel free to connect!</p>
-
-										<a href="./assets/KaliaHayes_Resume.pdf" target="_blank" class="btn btn-default animated fadeInLeft"  data-animation="fadeInLeft" data-animation-delay="1000" data-out-animation="fadeInLeft" data-out-animation-delay="600" data-toggle="" data-target=""><span class="button-label text-left">Resume</span><span class="arrow-wrap"><span class="arrow"></span></span></a>
-								</div>
-							</section>
-							<!--/Content with Typing Intro-->
-
-							<!--Notify Form-->
-							<section id="contact" class="section text-left">
-								<div  class="preloader"></div>
-								<div class="main-menu">
-									<a class="close-notify black" href="#home" data-animation="fadeInDown" data-animation-delay="900" data-out-animation="fadeOutUp" data-out-animation-delay="100">
-										<div class="call-to-action">
-											<i class="fa fa-times fa-2x"></i>
-											<span class="top"></span>
-											<span class="right"></span>
-											<span class="bottom"></span>
-											<span class="left"></span>
-										</div>
-									</a>
-								</div>
-								w
-								<!--CONTENT CHANGED & <br> ADDED-->
-								<div class="notify-wrap">
-									<form id="notifyMe" class="contact-form" action="notify-me.php" method="post">
-										<div class="input-wrap" data-animation="fadeInLeft" data-animation-delay="100" data-out-animation="fadeOutLeft" data-out-animation-delay="900">
-											<input  data-ng-model="notify" class="col-lg-10  align-center form-control input input__field input__field--hoshi notify-input-box" name="email" placeholder="email id"  type="email">
-											<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-										</div>
-										<button type="submit" data-hover="Send" class="btn btn-default progress-button btn-submit " data-animation="fadeInUp" data-animation-delay="900" data-out-animation="fadeOutUp" data-out-animation-delay="1300">
-										<span><span class="arrow-wrap"><span class="arrow"></span></span></span>
-										</button>
-									</form>
-								</div>
-							</section>
-							<!--/Notify Form-->
-
-							<div class="copyright">
-								<ul class="social-icons">
-									<li>
-										<a href="https://www.linkedin.com/in/kaliahayes/" target="_blank" class="social-icon">
-											<i class="fa fa-linkedin"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://github.com/KaliaHayes" target="_blank" class="social-icon">
-											<i class="fa fa-github"></i>
-										</a>
-									</li>
-									<li>
-										<a href="https://twitter.com/KaliaHayes" target="_blank" class="social-icon">
-											<i class="fa fa-twitter"></i>
-										</a>
-									</li>
-									<li>
-									<li>
-										<a href="https://www.instagram.com/cosmiccode_/" target="_blank" class="social-icon">
-											<i class="fa fa-instagram"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!--/main content-->
-
-						</div>
-					</div>
-					<!--/Left Content Intro-->
-
-					<!--Right Content Intro-->
-					<div class="side side-right">
-						<div class="background-kenburn"></div>
-						<!--Contect Nav-->
-						<div class="call-to-action contact">
-								<i class="fa fa-envelope fa-2x"></i>
-								<i class="fa fa-times fa-2x opacity-hide"></i>
-								<span class="top"></span>
-								<span class="right"></span>
-								<span class="bottom"></span>
-								<span class="left"></span>
-						</div>
-						<!--/Contect Nav-->
-
-						<div class="counter-content">
-							<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 align-center text-left">
-								<p class="tagline">Dallas based Information Technology and Systems undergrad with stomping grounds at UT Dallas.</p>
-
-								<!--Counter-->
-								<div id="countdown">
-
-								<span class="small-hr"></span>
-								<br></br>
-								<span class="remain-days" ><a href="https://www.utdallas.edu/whooshvideo/" target="_blank" style="color: white"> Whoosh.</a></span>
-								<!--/Counter-->
-
-							</div>
-						</div>
-					<div class="trans-overlay-dark"></div>
-					</div>
-					<!--/Right Content Intro-->
-				</div>
-				<!--/Intro-->
-
-				<!--About Section-->
-				<div class="page page-left">
-					<div  class="page-inner full-height" style="background: url("../img/bg-pattern.jpg")">
-						<div class="container align-center detail-info">
-							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>About</h3>
-								</div>
-								<div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-									<p class="tagline">Data. Design. Dallas.</p>
-									<span class="small-hr"></span>
-									<p class="align-center">
-
-										<p>Hello! My name is Kalia Hayes and I'm an <a href="http://jindal.utdallas.edu/isom/information-systems-programs/bs-its/" target="_blank">Information Technology and Systems</a> junior with a concentration in Business Intelligence and Data Analytics at the University of Texas at Dallas. In my time at UTD, I've immersed myself in all things business and data driven by taking courses such as Web Development for Business Applications, Web Analytics, and Java OOP. I've also held memberships in various UTD clubs including Women in Business and Technology, Undergraduate Success Scholars, and the UI/UX Club.</p><br>
-
-										<p>In addition to my UTD curriculum and extracurricular activities, I partake in various highly rated open online courses(thank you Coursera, Udacity, and EdX) around the web in order to increase my exposure to BI and data analytics. I also enjoy testing my growing abilities using open online databases and communities(another thank you to Data.world and Kaggle.com). </p><br>
-
-										<p>Apart from my studies, I've held at least one job during my entire UTD career. Since my freshman year, I've worked for UTD as an inventory clerk and assist in updating and maintaining UTD's asset databases. Also, I currently work as a remote based social media manager for four restaurants and one dairy farm. Through SMM, I have an created an environment where I utilize my business focused analytical skill set on a daily basis to drive sales and grow brand loyalty and awareness on various social media platforms. </p><br>
-										<p> I look forward to sharing much more about myself with you in the near future! Have a look at some of my abilities and current concentrations below.</p><br>
-										<p>Oh, and <a href="https://twitter.com/hashtag/CowboysNation" target="_blank">#CowboysNation</a></p>
-
-									<!--Client Slider-->
-									<div id="qualities">
-										<div class="qualities">
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-desktop"></i></span>
-												<span class="qual-tag">Web Development</span>
-												<span class="qual-desc">
-													I have designed, coded, and hosted websites using software such as Sketch, Photoshop, HTML, CSS, Bootstrap, GitHub pages, and Wordpress.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-line-chart"></i></span>
-												<span class="qual-tag">Data Analytics</span>
-												<span class="qual-desc">
-													Using analytical processes, I help businesses(or myself, really) make data-driven decisions by uncovering key insights hidden within.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-pie-chart"></i></span>
-												<span class="qual-tag"> Data Visualization</span>
-												<span class="qual-desc">
-													Translating data discoveries into a cohesive and comprehensive language for <i>all</i> viewers is essential for business to flourish. I enjoy doing so with Tableau.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-twitter"></i></span>
-												<span class="qual-tag">Social Media Mgmt.</span>
-												<span class="qual-desc">
-													For 2+ years, I've managed social media accounts for various businessess. I help develop and implement strategies to drive brand awareness.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-paper-plane"></i></span>
-												<span class="qual-tag"> Digital Marketing</span>
-												<span class="qual-desc">
-													During my studies, I've deployed Google AdWords campaigns and analyzed the data collected to increase brand awareness for a Plano,TX based charity.
-												</span>
-											</div>
-											<div class="item" >
-												<span class="fa-qual"><i class="fa fa-database"></i></span>
-												<span class="qual-tag"> Database Mgmt.</span>
-												<span class="qual-desc">
-													I possess knowledge of SQL and the MySQL database and have used these skills to perform CRUD operations on databases for analysis.
-												</span>
-											</div>
-										</div>
-									</div>
-									<!--/Client Slider-->
-								</div>
-
-							</div>
-						</div>
-						<div class="trans-overlay-dark-about"></div>
-					</div>
-				</div>
-				<!--/About Section-->
-
-				<!--Contact Section-->
-				<div class="page page-right">
-					<div  class="page-inner full-height">
-						<div class="container align-center detail-info">
-							<div class="row">
-							<div data-ng-controller="ContactController" class="panel-body">
-								<h3 class="col-lg-12 col-xs-9" data-ng-bind="formData.inputName||'Hello..'">Hello..</h3>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-9">
-									<form data-ng-submit="submit(contactform, $event)"  name="contactform" method="post" class="form-horizontal" role="form">
-										<div class="form-group input--hoshi" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-											<div class="input-wrap">
-												<input data-ng-model="formData.inputName" type="text" class="form-control input__field input input__field--hoshi" id="inputName" name="inputName" placeholder="Name" required>
-												<label class="input__label input__label input__label--hoshi input__label--hoshi-color-1 input__label--hoshi input__label--hoshi-color-1" ></label>
-											</div>
-										</div>
-										<div class="form-group  input--hoshi" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-											<div class="input-wrap">
-												<input data-ng-model="formData.inputEmail" type="email" class="form-control input input__field input__field--hoshi" placeholder="Your Email" id="inputEmail" name="inputEmail" required>
-												<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-											</div>
-										</div>
-										<div class="form-group  input--hoshi" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-											<div class="input-wrap">
-												<textarea data-ng-model="formData.inputMessage" class="form-control input input__field input__field--hoshi" rows="4" id="inputMessage" name="inputMessage" placeholder="message" required></textarea>
-												<label class="input__label input__label--hoshi input__label--hoshi-color-1"></label>
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="align-center">
-												<button type="submit" class="btn btn-default" data-ng-disabled="submitButtonDisabled">
-													<span><span class="arrow-wrap"><span class="arrow"></span></span></span>
-												</button>
-											</div>
-										</div>
-									</form>
-									<p data-ng-class="result">{{ resultMessage }}</p>
-								</div>
-								<div class="col-lg-3 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-9">
-									<div class="align-center address-detail">
-									<p>Dallas, Texas 75240 USA</p>
-
-									<div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1"><i class="fa fa-phone"></i></div>
-									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero">
-										<a href="callto:2147381386" target="_blank">+1 (214) 738-1386</a>
-									</div>
-									<div class="icon col-lg-2 col-md-2 col-sm-2 col-xs-1"><i class="fa fa-envelope"></i></div>
-									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-11 pad-left-zero">
-										<a href="mailto:Kalia.Hayes@utdallas.edu" target="_blank">Kalia.Hayes@utdallas.edu</a>
-									</div>
-
-								</div>
-
-								</div>
-
-							</div>
-
-							</div>
-						</div>
-
-						<div class="trans-overlay-dark-contact"></div>
-            		</div>
-				</div>
-				<!--/Contact Section-->
-
-			</div>
-			<!-- /Splitlayout -->
-
-		</div>
-		<!-- /Container -->
-
-		<!-- Scripts -->
-		<script src="js/jquery-1.11.3.min.js"></script>
-		<script src="js/angular.min.js"></script>
-		<script src="js/modernizr.custom.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/cbpSplitLayout.js"></script>
-		<script src="js/jquery.countdown.js"></script>
-		<script src="js/typed.js"></script>
-		<script src="js/app.js"></script>
-		<script src="js/controllers.js"></script>
-		<script src="js/owl.carousel.js"></script>
-		<script src="js/input-text.js"></script>
-		<script src="js/notifyMe.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/init.js"></script>
-	</body>
 </html>
