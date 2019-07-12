@@ -3126,8 +3126,11 @@ img.rounded {
 
 .nk-navbar .nk-nav-table {
     display: table;
-    width: 100%;
+    width: 90%;
     height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nk-navbar .nk-nav-table > * {
@@ -6396,7 +6399,7 @@ a.active > .nk-icon-search:after {
 }
 
 .nk-isotope-filter {
-    display: none;
+    display: block;
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
@@ -6406,7 +6409,7 @@ a.active > .nk-icon-search:after {
 }
 
 .nk-isotope-filter.nk-isotope-filter-active {
-    display: block;
+    display: none;
 }
 
 .nk-isotope-filter > li {

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kalia Hayes | Apple iOS App Store Exploratory Data Analysis</title>
+    <meta name="description" content="Personal web portfolio and resume of Kalia Hayes, Information Technology & Systems student at The University of Texas at Dallas.">
+    <meta name="keywords" content="portfolio, student, portfolio website, Exploratory data analysis, data, dataset, apple app store, app store, data analysis, eda, python">
+    <meta name="author">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- START: Styles -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet"
+        type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/bower_components/fontawesome/css/font-awesome.min.css">
+    <!-- Stroke 7 -->
+    <link rel="stylesheet" href="assets/bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+    <!-- Flickity -->
+    <link rel="stylesheet" href="assets/bower_components/flickity/dist/flickity.min.css">
+    <!-- Photoswipe -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/photoswipe.css">
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/photoswipe/dist/default-skin/default-skin.css">
+    <!-- Prism -->
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/prism/themes/prism-tomorrow.css">
+    <!-- Snow -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- END: Styles -->
+    <!-- jQuery -->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+</head>
+
+<style>
+    @media (min-width: 576px) {
+        #mobile-modals {
+            display: none;
+        }
+    }
+
+    @media (max-width: 576px) {
+        #mockup-caption {
+            display: none;
+        }
+    }
+</style>
+
+<!--
+    Additional Classes:
+        .nk-bg-gradient
+-->
+
+<body>
+    <header class="nk-header nk-header-opaque">
+        <!--
+        START: Navbar
+
+        Additional Classes:
+            .nk-navbar-lg
+            .nk-navbar-sticky
+            .nk-navbar-autohide
+            .nk-navbar-transparent
+            .nk-navbar-transparent-always
+            .nk-navbar-white-text-on-top
+    -->
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar">
+            
+                <div class="nk-nav-table">
+                    <a href="/" class="nk-nav-logo display-4" style="color: #1140c9 !important;"> KH </a>
+                    <ul class="nk-nav nk-nav-right hidden-md-down nk-nav-logo-onscroll" data-nav-mobile="#nk-nav-mobile" style="padding-top: 0px;">
+                        <li>
+                            <a href="/#about">About</a>
+                        </li>
+                        <li>
+                            <a href="/#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="/#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="/#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="nk-nav nk-nav-right nk-nav-icons">
+                        <li class="single-icon hidden-lg-up">
+                            <a href="#" class="nk-navbar-full-toggle">
+                                <span class="nk-icon-burger" style="color: #1140c9 !important;">
+                                    <span class="nk-t-1"></span>
+                                    <span class="nk-t-2"></span>
+                                    <span class="nk-t-3"></span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+        </nav>
+        <!-- END: Navbar -->
+    </header>
+    <!--
+    START: Navbar Mobile
+
+    Additional Classes:
+        .nk-navbar-align-center
+        .nk-navbar-align-right
+-->
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-bg">
+            <div class="bg-image" style="background-image: url('assets/images/bg-pattern.jpg')"></div>
+        </div>
+        <div class="nk-nav-table">
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-header">
+                        <div class="nk-nav-logo">
+                            <a href="/" class="nk-nav-logo display-4" style="color: #1140c9 !important;" wp-site-name wp-href="url"> KH </a>
+                        </div>
+                        <div class="nk-nav-close nk-navbar-full-toggle">
+                            <span class="nk-icon-close"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row-full nk-nav-row">
+                <div class="nano">
+                    <div class="nano-content">
+                        <div class="nk-nav-table">
+                            <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
+                                <ul class="nk-nav">
+                                    <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nk-nav-row">
+                <div class="container">
+                    <div class="nk-nav-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Navbar Mobile -->
+
+    <!--Main Content-->
+    <div class="nk-main">
+        <!--Intro-->
+        <div class="nk-portfolio-single" id="intro">
+            <div class="container">
+                <div class="nk-gap-4 mb-5"></div>
+                <h1 class="nk-portfolio-title display-4 text-center">iOS App Store Exploratory Data Analysis</h1>
+                <div class="nk-portfolio-info">
+                    <div class="nk-portfolio-text">
+                        <div class="lead lead-sm pt-3 text-center">My Business Analytics course included a semseter long group project that involved using Python analytical & visualization libraries and tools to
+                            perform an exploratory data analysis on a chosen dataset. My group and I browsed Kaggle.com for
+                            datasets and inspiration and eventually settled on a dataset contianing over <a href="https://www.kaggle.com/ramamet4/app-store-apple-data-set-10k-apps" target="_blank"><b>7200 iOS mobile
+                            application details</b></a> such as name, size, price, and ratings.
+                            <br>
+                            <br> My group selected the Apple App Store dataset for a variety of reasons, with the primary one
+                            being familiarity to the topic. We all interact with app stores frequently and are familiar with
+                            the front facing aspects involved. As business majors with marketing backgrounds and as consumers
+                            who often ask ourselves if a purchase is “worth it,” the idea of analyzing one of the most popular
+                            marketplaces was very attractive.
+                            <br>
+                            <br> While browsing the dataset, my group determined 4 key questions we believe our data could answer.
+                            View our final project writeup or Kaggle notebook for a detailed look at our analysis. Continue
+                            below to view a summary of our analysis, download our analysis documentation, our view our Kaggle
+                            Python project notebook.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nk-gap-4 mt-14"></div>
+            </div>
+        </div>
+
+        <!--Header Image-->
+        <div class="nk-portfolio-content" id="header" style="background-color: #ffffff !important;">
+            <img src="assets/images/iOS EDA/ft-img.png" alt="" class="nk-img-stretch">
+        </div>
+
+        <!--Objective 1-->
+        <div class="nk-portfolio-content" id="task">
+            <div class="container">
+                <div class="nk-gap-4">
+                </div>
+                <div class="row vertical-gap">
+                    <div class="offset-md-1 col-md-11">
+                        <h3>How do you create a best seller mobile app?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <p>
+                            To answer this, we analyzed the data to find apps with the highest ratings, then delved deeper and analyzed how elements
+                            of those apps contribute to positive consumer sentiment. The elements include but are not limited
+                            to: app category, app listings such as descriptions and preview media, app size, and app prices.
+                        </p>
+                        <br>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <h4>Key Findings</h4>
+                        <p>
+                            After pulling out the top 100 most rated apps we determined those with an average user rating of 4+ stars to be best selling
+                            apps. Out of 68 best selling apps in our dataset, 59 free best selling apps and only 9 paid,
+                            which means that a majority of the highly sought after apps are in fact free to use. <em><b>Graph 1</b></em>
+                            below shows the distribution of best selling app prices, ranging from $0.00 to $6.99. We also
+                            determined that best selling apps are usually medium in size, with an average size of ~275mb,
+                            as shown in <em><b>Graph 2</b></em> above.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-1 text-center">
+                        <img src="assets/images/iOS EDA/g1.png" class="img-fluid">
+                        <br>
+                        <p>
+                            <b><em>Graph 1</em></b>
+                        </p>
+                    </div>
+                    <div class="col-md-4 offset-md-1 text-center">
+                        <img src="assets/images/iOS EDA/g2.png" class="img-fluid">
+                        <br>
+                        <p>
+                            <b><em>Graph 2</em></b>
+                        </p>
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+            </div>
+        </div>
+
+        <!--Objective 2-->
+        <div class="nk-portfolio-content" style="background-color: #ffffff !important;">
+            <div class="container">
+                <div class="nk-gap-4">
+                </div>
+                <div class="row vertical-gap">
+                    <div class="offset-md-1 col-md-11">
+                        <h3>Are paid apps worth the money?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <p>
+                            We ask ourselves this question all the time when it comes to making purchases. In order to answer this question, we analyzed
+                            the consumer ratings associated with apps of the same category, but differentiated between unpaid
+                            and paid apps. Along with this, determined if there are differences between how consumers perceive
+                            free apps vs. paid apps.
+                        </p>
+                        <br>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <h4>Key Findings</h4>
+                        <p>
+                            The average price of all paid apps is $3.96 but may be skewed by possible outliers. We found that the app with the highest
+                            price is actually a 4GB Japanese weather app priced at $299.99. Regardless of app price, we discovered
+                            that the the average consumer rating of paid apps is 3.72/5 stars. When compared to paid apps
+                            within our dataset, the 3.38 average ratings of the 4,057 free apps is lower than that of paid
+                            apps. With this, it can be determined that paid apps are “worth it,” if user ratings have anything
+                            to say for it. As we can see from <b><em>Graph 3 & 4</em></b> below, the ratings of paid apps are slightly more
+                            negatively skewed due to a higher average user rating compared to free apps
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-1 text-center">
+                        <img src="assets/images/iOS EDA/g3.png" class="img-fluid">
+                        <br>
+                        <p>
+                            <b><em>Graph 3</em></b>
+                        </p>
+                    </div>
+                    <div class="col-md-4 offset-md-1 text-center">
+                        <img src="assets/images/iOS EDA/g4.png" class="img-fluid">
+                        <br>
+                        <p>
+                            <b><em>Graph 4</em></b>
+                        </p>
+                    </div>
+                </div>
+                <div class="nk-gap-3"></div>
+            </div>
+        </div>
+
+        <!--Objective 3-->
+        <div class="nk-portfolio-content" id="analysis" style="background-color: #f6f6f6 !important;">
+            <div class="analysis" style="background-color: #f6f6f6 !important;">
+                <div class="container">
+                    <div class="nk-gap-4">
+                    </div>
+                    <div class="row vertical-gap">
+                        <div class="offset-md-1 col-md-11">
+                            <h3>What are the leading categories of mobile apps?</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <p>
+                                We wanted to analyze app genre statistics in the case that one of us decides to create a mobile application one day. Information
+                                from our analysis can help us determine the best genre of apps to make. My group and I looked
+                                closely at the distribution of app categories to answer this question. We also examined price
+                                distributions among paid apps per category using descriptive statistics.
+                            </p>
+                            <br>
+                        </div>
+                        <div class="col-md-10 offset-md-1">
+                            <h4>Key Findings</h4>
+                            <p>
+                                We learned that the leading genre in terms of total apps in our dataset is Games, with a total of 3862 apps. The top five
+                                app genres are Games, Entertainment, Education, Photo & Video, and Utilities respectively.
+                                Catalogs has the least at only 10. The apps in the Medical, Business, Reference, Music, and
+                                Productivity genres all have the highest average app prices, as shown in <b><em>Graph 5</em></b>.
+                            </p>
+                            <p>
+                                Next, we found the leading genre of apps based on user ratings. As it turns out, the leading category in terms of highest
+                                average rating would be Productivity with an average rating of 4.01, which is shown in <b><em>Graph
+                                6</em></b> below. Apps in the Productivity genre are generally free of cost, however, those that are
+                                paid generally range from $0 - $10.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1 text-center">
+                            <img src="assets/images/iOS EDA/g5.png" class="img-fluid">
+                            <br>
+                            <p>
+                                <b><em>Graph 5</em></b>
+                            </p>
+                        </div>
+                        <div class="col-md-4 offset-md-1 text-center">
+                            <img src="assets/images/iOS EDA/g6.png" class="img-fluid">
+                            <br>
+                            <p>
+                                <b><em>Graph 6</em></b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nk-gap-3"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Objective 4-->
+        <div class="nk-portfolio-content" id="design_implementation" style="background-color: #ffffff !important;">
+                <div class="container">
+                        <div class="nk-gap-4">
+                        </div>
+                        <div class="row vertical-gap">
+                            <div class="offset-md-1 col-md-11">
+                                <h3>What size are mobile applications?</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <p>
+                                        Applications come in all sizes, but mobile phones typically have 1TB in storage or less. We've learned that mobile application attributes can make or break and apps' sales, especially application size. To answer this question, we analyzed the file size distribution of apps.                                 </p>
+                                <br>
+                            </div>
+                            <div class="col-md-10 offset-md-1">
+                                <h4>Key Findings</h4>
+                                <p>
+                                        The average size of all apps in our dataset is ~200mb. The first quartile of app size is ~47mb, the second quartile is ~97mb, and the third quartile is ~181mb. The interquartile range thus is ~134mb. Because the mean app size is larger than the median, we know that our data is positively skewed as a result of outliers. <b><em>Graph 7</em></b> below depicts the positively skewed app size distribution data. To get to these answers, we did have to convert bytes to megabytes.                                </p>
+                                <p>
+                                        Lastly, we analyzed the average app sizes per genre for free and paid apps. As we can see in <b><em>Graph 8 & 9</em></b>, paid apps of the medical, book, and games genre are usually the largest in size. Free apps of the games, medical, and education genre are usually the largest in size.                                </p>
+                            </div>
+                        </div>
+                        <div class="row offset-md-0">
+                            <div class="col-md-4 text-center">
+                                <img src="assets/images/iOS EDA/g7.png" class="img-fluid">
+                                <br>
+                                <p>
+                                    <b><em>Graph 7</em></b>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <img src="assets/images/iOS EDA/g8.png" class="img-fluid">
+                                <br>
+                                <p>
+                                    <b><em>Graph 8</em></b>
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-center ">
+                                    <img src="assets/images/iOS EDA/g9.png" class="img-fluid">
+                                    <br>
+                                    <p>
+                                        <b><em>Graph 9</em></b>
+                                    </p>
+                                </div>
+                        </div>
+                        <div class="nk-gap-3"></div>
+                    </div>
+        </div>
+
+        <!--Project Links-->
+        <div class="nk-portfolio-launch-site">
+            <a href="https://www.kaggle.com/kaliahaze/group-4-attempt" target="_blank">Kaggle Python Notebook</a> //
+            <a href="assets/documents/Page Mockups2.xd" target="_blank">Project Paper</a> //
+            <a href="https://docs.google.com/presentation/d/e/2PACX-1vQxPCGyOvgUGJvb6h9E0_Kk20C-Igz2pgNm77EvQmaZ22YEXzfygBxJ-BOb7KNFJqHQ5NdfMZfn07dO/pub?start=false&loop=false&delayms=3000"
+                target="_blank">Presentation Slides</a>
+        </div>
+
+
+        <!-- START: Pagination -->
+        <div class="nk-pagination nk-pagination-center">
+            <div class="container">
+                <a class="nk-pagination-prev" href="work-single-7.html">
+                    <span class="pe-7s-angle-left"></span> Previous Work</a>
+                <a class="nk-pagination-center" href="work-3-style-1.html">
+                    <span class="nk-icon-squares"></span>
+                </a>
+                <a class="nk-pagination-next" href="work-single-9.html">Next Work
+                    <span class="pe-7s-angle-right"></span>
+                </a>
+            </div>
+        </div>
+        <!-- END: Pagination -->
+        <!--START: Footer
+
+    Additional Classes:
+        .nk-footer-transparent
+-->
+        <footer class="nk-footer">
+            <div class="nk-footer-cont">
+                <div class="container text-center">
+                    <div class="nk-footer-social">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/kaliahayes/" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/KaliaHayes/" target="_blank">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/KaliaHayes" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/cosmiccode_/" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nk-footer-text">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: Footer -->
+    </div>
+    <!-- START: Scripts -->
+    <!-- GSAP -->
+    <script src="assets/bower_components/gsap/src/minified/TweenMax.min.js"></script>
+    <script src="assets/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- nK Share -->
+    <script src="assets/plugins/nk-share/nk-share.js"></script>
+    <!-- Sticky Kit -->
+    <script src="assets/bower_components/sticky-kit/dist/sticky-kit.min.js"></script>
+    <!-- Jarallax -->
+    <script src="assets/bower_components/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/bower_components/jarallax/dist/jarallax-video.min.js"></script>
+    <!-- Flickity -->
+    <script src="assets/bower_components/flickity/dist/flickity.pkgd.min.js"></script>
+    <!-- Isotope -->
+    <script src="assets/bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+    <!-- Photoswipe -->
+    <script src="assets/bower_components/photoswipe/dist/photoswipe.min.js"></script>
+    <script src="assets/bower_components/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+    <!-- Jquery Form -->
+    <script src="assets/bower_components/jquery-form/dist/jquery.form.min.js"></script>
+    <!-- Jquery Validation -->
+    <script src="assets/bower_components/jquery-validation/dist/jquery.validate.min.js"></script>
+    <!-- Hammer.js -->
+    <script src="assets/bower_components/hammer.js/hammer.min.js"></script>
+    <!-- Social Likes -->
+    <script src="assets/bower_components/social-likes/dist/social-likes.min.js"></script>
+    <!-- NanoSroller -->
+    <script src="assets/bower_components/nanoscroller/bin/javascripts/jquery.nanoscroller.min.js"></script>
+    <!-- Keymaster -->
+    <script src="assets/bower_components/keymaster/keymaster.js"></script>
+    <!-- Prism -->
+    <script src="assets/bower_components/prism/prism.js"></script>
+    <!-- Snow -->
+    <script src="assets/js/snow.min.js"></script>
+    <script src="assets/js/snow-init.js"></script>
+    <!-- END: Scripts -->
+
+
+    <!--Popup Modals-->
+    <!-- Main Page Modal -->
+    <div class="modal fade" id="ib-main" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Career Landing Page</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>For the career landing page, I wanted to create a space that highlights company perks, programs, and
+                        features. After auditing various career pages around the web, I decided to create new web pages highlighting
+                        Interstate's company culture, internship program, benefits, and military hiring initiative. </p>
+
+                    <p>My first plan of attack when designing the new career page was to move the "Apply Now" button towards
+                        to top of the viewport in order to draw more attention to it. Also, given that the landing page menu
+                        links to those additional career related pages, I chose to offer a brief preview of the content found
+                        on each newly created page using pre-existing page building components found within Sitecore in order
+                        to match my page style with the overarching website style. Lastly, I decided to include a rotating
+                        carousel of quotes from current company employees as a way to make Interstate's culture more transparent
+                        to potential candidates in a word-of-mouth style.</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Life @ Interstate Batteries Modal -->
+    <div class="modal fade" id="ib-life" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Life at Interstate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>On the Life At Interstate web page, I really wanted to emphasize the empowering, team based company culture
+                        while also giving a holistic view of departments and business units found at Interstate. I reckoned
+                        that the page content depicting Life @ Interstate would be a worthy pull-factor in and of itself
+                        and would generate job applicants.
+                    </p>
+                    <p>Starting at the top, I implemented an immediate call to action by telling viewers to "Join Our Interstate
+                        Team". Right below the CTA, I gave a concise yet to the point overview of business units found at
+                        Interstate, so that potential applicants can gauge just which team they'd like to join.
+                    </p>
+                    <p>
+                        The next section of the page detailed Interstate's commitment to fostering a culture when your most impactful self can shine.
+                        As an intern, I was highly impressed with the company offered courses, programs, and other career
+                        enhancing resources and was eager to show the world a sneak peek.
+                    </p>
+                    <p>The last section on the page highlighted just how "fun" working at Interstate could be. I wanted to introduce
+                        applicants to the exciting recurring company-wide events.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/life-at-interstate" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internships Modal -->
+    <div class="modal fade" id="ib-internships" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Internships</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>The internship page was definitely my favorite page to work on. With the other pages, I utilized a lot
+                        of company resources in order to generate page content. With the Internship page, I used my everyday
+                        experiences, and feedback from my intern peers as well as former interns to tell a tale.
+                    </p>
+                    <p>
+                        I started off by giving an overview of the internship program offered at Interstate Batteries, including types of internships
+                        offered. As I applied for an internship with Interstate, this very material was nowhere to be found
+                        and I essentially went in blindly with my fingers crossed (turned out great, though!). Having gone
+                        through the internship program, I knew that most everything I participated in was high quality and
+                        worth a mention.
+                    </p>
+                    <p>
+                        I wanted to incorporate something similar to the testimonials on the career landing page as a way to tell potential intern
+                        applicants about the program from the point of view of recent participants. My group and I created
+                        an internship survey that we sent it out to the other summer '18 interns asking them a few questions
+                        about their experience as an Interstate Batteries intern. After receiving responses, I made a design
+                        choice to emphasize stand-out quotes from the survey replies we received and opted to hide the rest
+                        behind a pop up modal to prevent page congestion. We also sent out a similar survey to current Interstate
+                        employee's who had previously interned with the company as a way to show applicants that there's
+                        a real chance at a future at Interstate.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/interns" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Modal -->
+    <div class="modal fade" id="ib-benefits" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Benefits & Wellness</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/benefits" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VM Modal -->
+    <div class="modal fade" id="ib-vm" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Values Mission | Veteran Hiring Initiative</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="nk-btn" data-dismiss="modal">Close</button>
+                    <a href="https://ibweb.preview.interstatebatteries.com/about/join2/values-mission" target="_blank">
+                        <button type="button" class="nk-btn">View Page</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
